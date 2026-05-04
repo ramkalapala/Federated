@@ -34,24 +34,24 @@
     │ <br/>
     └── outputs/   (optional)
 # 6. What the Notebook Does Step by Step <br/>
-    •	Imports pandas, numpy, SGDRegressor, StandardScaler, mean_squared_error, and matplotlib. <br/>
-    •	Loads the dataset from ./DATA/Medical_insurance.csv. <br/>
-    •	Encodes categorical variables such as sex and smoker and applies one-hot encoding to region.\ <br/>
-    •	Separates features and target variable, where charges is the prediction target.<br/>
-    •	Standardizes features to improve the convergence of SGD-based optimization. <br/>
-    •	Splits the dataset into multiple client partitions to simulate decentralized learning nodes. <br/>
-    •	Trains one centralized baseline model using the full dataset. <br/>
-    •	Initializes global weights and repeatedly performs local client training over several communication rounds. <br/>
-    •	Aggregates local model parameters to produce a federated-style global update. <br/>
-    •	Computes losses and plots centralized versus federated learning behavior. <br/>
+    •	Imports pandas, numpy, SGDRegressor, StandardScaler, mean_squared_error, and matplotlib. 
+    •	Loads the dataset from ./DATA/Medical_insurance.csv. 
+    •	Encodes categorical variables such as sex and smoker and applies one-hot encoding to region.
+    •	Separates features and target variable, where charges is the prediction target.
+    •	Standardizes features to improve the convergence of SGD-based optimization. 
+    •	Splits the dataset into multiple client partitions to simulate decentralized learning nodes. 
+    •	Trains one centralized baseline model using the full dataset. 
+    •	Initializes global weights and repeatedly performs local client training over several communication rounds.
+    •	Aggregates local model parameters to produce a federated-style global update. 
+    •	Computes losses and plots centralized versus federated learning behavior. 
 # 7. Dataset Requirement <br/>
     The notebook will not run unless the Medical_insurance.csv file is available at the exact relative path used inside the notebook. The file name is case-sensitive on many systems. Use the exact file name and folder name shown below. <br/>
     ./DATA/Medical_insurance.csv <br/>
     Before uploading to GitHub, verify that the dataset is either included in the repository or clearly referenced in the README with a valid download source. If you choose not to upload the CSV file to GitHub, update the notebook or README so that users know how to obtain and place it correctly. <br/>
 # 8. Installation Procedure for GitHub Users <br/>
-  The following commands can be included in the repository documentation so that users can install the environment correctly. <br/>
+  The following commands can be included in the repository documentation so that users can install the environment correctly.
   ## 8.1 Windows <br/>
-      python -m venv venv <br/>
+      python -m venv venv 
       venv\Scripts\activate <br/>
       pip install -r requirements.txt <br/>
   ## 8.2 Linux or macOS <br/>
