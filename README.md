@@ -47,7 +47,7 @@
 # 7. Dataset Requirement <br/>
     The notebook will not run unless the Medical_insurance.csv file is available at the exact relative path used inside the notebook. The file name is case-sensitive on many systems. Use the exact file name and folder name shown below. 
     ./DATA/Medical_insurance.csv
-    Before uploading to GitHub, verify that the dataset is either included in the repository or clearly referenced in the README with a valid download source. If you choose not to upload the CSV file to GitHub, update the notebook or README so that users know how to obtain and place it correctly.
+    
 # 8. Installation Procedure for GitHub Users <br/>
   The following commands can be included in the repository documentation so that users can install the environment correctly.
   ## 8.1 Windows <br/>
