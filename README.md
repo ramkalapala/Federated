@@ -6,32 +6,32 @@
   Within the notebook, local models are trained independently and then aggregated using a federated averaging concept to approximate a shared global model. Although the notebook is a simplified educational prototype rather than a production-grade federated platform, it provides a practical starting point for understanding how secure, scalable, and regulation-conscious healthcare insurance analytics can be built from decentralized machine learning principles.
 3. Exact Libraries Required by the Notebook
   Based on the imports present in FEDERATED.ipynb, the following Python libraries are required.
-  numpy==1.24.4
-  pandas==2.0.3
-  scikit-learn==1.3.0
-  matplotlib==3.7.2
-  jupyter==1.0.0
-  notebook==7.0.6
+  numpy==1.24.4 <br/>
+  pandas==2.0.3 <br/>
+  scikit-learn==1.3.0 <br/>
+  matplotlib==3.7.2 <br/>
+  jupyter==1.0.0 <br/>
+  notebook==7.0.6 <br/>
 4. requirements.txt Content
     Create a file named requirements.txt in the same GitHub project folder and place the following content exactly as shown below.
-  numpy==1.24.4
-  pandas==2.0.3
-  scikit-learn==1.3.0
-  matplotlib==3.7.2
-  jupyter==1.0.0
-  notebook==7.0.6
+  numpy==1.24.4 <br/>
+  pandas==2.0.3 <br/>
+  scikit-learn==1.3.0 <br/>
+  matplotlib==3.7.2 <br/>
+  jupyter==1.0.0 <br/>
+  notebook==7.0.6 <br/>
 5. Expected Folder Structure
   The notebook contains the line pd.read_csv('./DATA/Medical_insurance.csv'). Therefore, the dataset must be placed inside a folder named DATA at the root of the repository. The structure below is the correct GitHub-ready layout.
-Federated_Learning_Project/
-│
-├── FEDERATED.ipynb
-├── requirements.txt
-├── README.md
-├── .gitignore
-│
-├── DATA/
-│   └── Medical_insurance.csv
-│
+Federated_Learning_Project/ <br/>
+│ <br/>
+├── FEDERATED.ipynb <br/>
+├── requirements.txt <br/>
+├── README.md <br/>
+├── .gitignore <br/>
+│ <br/>
+├── DATA/ <br/>
+│   └── Medical_insurance.csv <br/>
+│ <br/>
 └── outputs/   (optional)
 6. What the Notebook Does Step by Step
   •	Imports pandas, numpy, SGDRegressor, StandardScaler, mean_squared_error, and matplotlib.
@@ -50,22 +50,22 @@ Federated_Learning_Project/
   Before uploading to GitHub, verify that the dataset is either included in the repository or clearly referenced in the README with a valid download source. If you choose not to upload the CSV file to GitHub, update the notebook or README so that users know how to obtain and place it correctly.
 8. Installation Procedure for GitHub Users
   The following commands can be included in the repository documentation so that users can install the environment correctly.
-  8.1 Windows
-      python -m venv venv
-      venv\Scripts\activate
-      pip install -r requirements.txt
-  8.2 Linux or macOS
-      python3 -m venv venv
-      source venv/bin/activate
-      pip install -r requirements.txt
-  8.3 Launching the Notebook
-      jupyter notebook
+  8.1 Windows <br/>
+      python -m venv venv <br/>
+      venv\Scripts\activate <br/>
+      pip install -r requirements.txt <br/>
+  8.2 Linux or macOS <br/>
+      python3 -m venv venv <br/>
+      source venv/bin/activate <br/>
+      pip install -r requirements.txt <br/>
+  8.3 Launching the Notebook <br/>
+      jupyter notebook <br/>
       After Jupyter opens in the browser, open FEDERATED.ipynb and run the cells in order from top to bottom.
 9. Suggested .gitignore File
-    venv/
-    __pycache__/
-    *.pyc
-    .ipynb_checkpoints/
+    venv/ <br/>
+    __pycache__/ <br/>
+    *.pyc <br/>
+    .ipynb_checkpoints/ 
 10. Program Outputs Expected from FEDERATED.ipynb
     When executed successfully, the notebook should produce the following types of outputs:
     •	A processed dataset ready for model training.
