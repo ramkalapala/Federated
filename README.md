@@ -45,41 +45,41 @@
     •	Aggregates local model parameters to produce a federated-style global update. 
     •	Computes losses and plots centralized versus federated learning behavior. 
 # 7. Dataset Requirement <br/>
-    The notebook will not run unless the Medical_insurance.csv file is available at the exact relative path used inside the notebook. The file name is case-sensitive on many systems. Use the exact file name and folder name shown below. <br/>
-    ./DATA/Medical_insurance.csv <br/>
-    Before uploading to GitHub, verify that the dataset is either included in the repository or clearly referenced in the README with a valid download source. If you choose not to upload the CSV file to GitHub, update the notebook or README so that users know how to obtain and place it correctly. <br/>
+    The notebook will not run unless the Medical_insurance.csv file is available at the exact relative path used inside the notebook. The file name is case-sensitive on many systems. Use the exact file name and folder name shown below. 
+    ./DATA/Medical_insurance.csv
+    Before uploading to GitHub, verify that the dataset is either included in the repository or clearly referenced in the README with a valid download source. If you choose not to upload the CSV file to GitHub, update the notebook or README so that users know how to obtain and place it correctly.
 # 8. Installation Procedure for GitHub Users <br/>
   The following commands can be included in the repository documentation so that users can install the environment correctly.
   ## 8.1 Windows <br/>
       python -m venv venv 
-      venv\Scripts\activate <br/>
-      pip install -r requirements.txt <br/>
+      venv\Scripts\activate 
+      pip install -r requirements.txt 
   ## 8.2 Linux or macOS <br/>
-      python3 -m venv venv <br/>
-      source venv/bin/activate <br/>
-      pip install -r requirements.txt <br/>
+      python3 -m venv venv 
+      source venv/bin/activate 
+      pip install -r requirements.txt 
   ## 8.3 Launching the Notebook <br/>
-      jupyter notebook <br/>
-      After Jupyter opens in the browser, open FEDERATED.ipynb and run the cells in order from top to bottom. <br/>
-# 9. Suggested .gitignore File <br\>
-      venv/ <br/>
-      __pycache__/ <br/>
-      *.pyc <br/>
-      .ipynb_checkpoints/ <br\>
+      jupyter notebook 
+      After Jupyter opens in the browser, open FEDERATED.ipynb and run the cells in order from top to bottom. 
+# 9. Suggested .gitignore File 
+      venv/ 
+      __pycache__/ 
+      *.pyc 
+      .ipynb_checkpoints/
 # 10. Program Outputs Expected from FEDERATED.ipynb <br/>
-      When executed successfully, the notebook should produce the following types of outputs: <br/>
-     •	A processed dataset ready for model training. <br/>
-     •	A trained centralized SGDRegressor baseline. <br/>
-     •	A simulated federated model trained across multiple client partitions. <br/>
-     •	Loss values for centralized and federated training. <br/>
-     •	A plotted graph comparing training behavior across rounds. <br/>
-     •	Printed performance summaries using regression error metrics. <br/>
+      When executed successfully, the notebook should produce the following types of outputs: 
+     •	A processed dataset ready for model training. 
+     •	A trained centralized SGDRegressor baseline. 
+     •	A simulated federated model trained across multiple client partitions. 
+     •	Loss values for centralized and federated training. 
+     •	A plotted graph comparing training behavior across rounds. 
+     •	Printed performance summaries using regression error metrics. 
 # 11. Important Technical Notes About the Current Notebook <br/>
-      •	The notebook is a simplified simulation and not a full production federated learning stack. <br/>
-      •	Its current design is best described as an educational prototype for decentralized regression learning. <br/>
-      •	The client partitioning is simulated locally rather than deployed across real devices or institutions. <br/>
-      •	The program depends on the insurance CSV file being present in the exact folder location used in the code. <br/>
-      •	Users should run cells sequentially; skipping preprocessing cells may cause downstream errors. <br/>
+      •	The notebook is a simplified simulation and not a full production federated learning stack. 
+      •	Its current design is best described as an educational prototype for decentralized regression learning.
+      •	The client partitioning is simulated locally rather than deployed across real devices or institutions. 
+      •	The program depends on the insurance CSV file being present in the exact folder location used in the code. 
+      •	Users should run cells sequentially; skipping preprocessing cells may cause downstream errors. 
 # 12. Final Summary <br/>
     For this program file, the essential execution requirements are straightforward: install the six required Python packages, place the dataset at ./DATA/Medical_insurance.csv, keep the notebook name as FEDERATED.ipynb, and run the cells in order through Jupyter.
 
